@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56" height="34" viewBox="0 0 56 34"
+     role="img" aria-label="{{ 100 }} disk-yl badge">
+  <defs>
+    <!-- Gradient (blue → violet) to match the original style -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5AA9FF"/>
+      <stop offset="50%" stop-color="#7E7BFF"/>
+      <stop offset="100%" stop-color="#C44BD6"/>
+    </linearGradient>
+
+    <!-- Subtle depth; scoped tightly to avoid halos on small canvas -->
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="0.7" stdDeviation="0.9"
+                    flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Typography: bold geometric sans fallbacks -->
+    <style>
+      .brace {
+        font: 700 18px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: url(#grad);
+        dominant-baseline: middle;
+      }
+      .num {
+        /* Reduced so ' 100 ' fits neatly between the braces on a 56x34 canvas */
+        font: 700 16px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: url(#grad);
+        dominant-baseline: middle;
+        letter-spacing: 0.3px;
+      }
+      .name {
+        font: 800 10px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: url(#grad);
+        letter-spacing: 0.4px;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark background for contrast -->
+  <rect x="0" y="0" width="56" height="34" fill="#1E1E1E"/>
+
+  <!-- Top line: {{ 100 }} — centered and non-overlapping -->
+  <!-- Position near upper half; spacing tuned for tiny canvas -->
+  <g filter="url(#shadow)" transform="translate(28, 14)">
+    <!-- Left braces slightly offset to allow inner spaces around 100 -->
+    <text class="brace" text-anchor="end" x="-9.5" y="0">{{</text>
+    <text class="num"   text-anchor="middle" x="0"    y="0"> 100 </text>
+    <text class="brace" text-anchor="start" x="9.5"  y="0">}}</text>
+  </g>
+
+  <!-- Bottom line: disk-yl — same visual margin from the top line -->
+  <text class="name" text-anchor="middle" x="28" y="27">disk-yl</text>
+</svg>
