@@ -63,7 +63,14 @@ export const workDetails = [
     Company: `Young Living`,
     Location: "Indonesia",
     Type: "Full Time",
-    Duration: "Sep 2016 - Feb 2026",
+    Duration: "Sep 2017 - Feb 2026",
+  },
+  {
+    Position: "Information Technology Freelancer",
+    Company: `Online`,
+    Location: "Indonesia",
+    Type: "Part Time",
+    Duration: "June 2016 - Aug 2017",
   },
   {
     Position: "Business Technology Services",
@@ -77,15 +84,15 @@ export const workDetails = [
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Information Technology Specialist",
+    Position: "Information Technology",
     Company: "Udemy, YouTube, Google, Coursera",
-    Location: "Online",
+    Location: "Online & Offline",
     Type: "Full Time",
     Duration: "Past to Present",
   },
   {
     Position: "Bachelor in Electrical Engineering",
-    Company: `UKI`,
+    Company: `Christian University of Indonesia`,
     Location: "Jakarta",
     Type: "Full Time",
     Duration: "1994 - 1999",
