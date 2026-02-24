@@ -81,7 +81,7 @@ export const eduDetails = [
     Company: "Udemy, YouTube, Google, Coursera",
     Location: "Online",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "Past to Present",
   },
   {
     Position: "Bachelor in Electrical Engineering",
@@ -170,6 +170,6 @@ project lorem ipsum generator for dummy content`,
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "diskandar@youngliving.com",
+  email: "diskandar.youngliving@gmail.com",
   phone: "+62 882 99145601",
 };
