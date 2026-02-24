@@ -52,18 +52,11 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Application Support",
+    Position: "Information Technology Specialist",
     Company: `Young Living`,
     Location: "Indonesia",
     Type: "Full Time",
-    Duration: "Sep 2016 - Feb 2026",
-  },
-  {
-    Position: "IT Specialist",
-    Company: `Young Living`,
-    Location: "Indonesia",
-    Type: "Full Time",
-    Duration: "Sep 2017 - Feb 2026",
+    Duration: "Sep 2017 - Present",
   },
   {
     Position: "Information Technology Freelancer",

@@ -57,29 +57,37 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
-      <div>
+    <main className="container mx-auto max-width section md:flex justify-between items-center gap-12">
+      <div className="flex-1">
         <h1
           ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-4xl md:text-5xl xl:text-6xl xl:leading-tight font-bold text-insta-text mb-4"
         >
-          Hi,😎<br></br>My Name is<br></br>
+          Hi,👋
         </h1>
         <h1
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-4xl md:text-5xl xl:text-6xl xl:leading-tight font-bold text-insta-gradient mb-6"
         >
           {name}
         </h1>
         <h2
           ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-xl md:text-3xl xl:text-4xl xl:leading-tight font-semibold text-insta-text-secondary mb-8"
         >
           {tagline}
         </h2>
+        <button className="btn-insta mt-6">
+          Explore My Work
+        </button>
       </div>
-      <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="diskandar-yl" />
+      <div className="mt-8 md:mt-0 flex-1" ref={myimageref}>
+        <img 
+          className="w-full rounded-2xl shadow-2xl shadow-insta-gradient-pink/30" 
+          src={img} 
+          alt="Iskandar-YL Profile" 
+          loading="lazy"
+        />
       </div>
     </main>
   );

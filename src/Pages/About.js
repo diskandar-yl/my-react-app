@@ -4,15 +4,15 @@ import { personalDetails, workDetails, eduDetails } from "../Details";
 
 function About() {
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 ">
-      <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+    <main className="container mx-auto max-width pt-20 pb-24 ">
+      <section className="mb-16">
+        <h1 className="text-4xl md:text-5xl xl:text-6xl xl:leading-tight font-bold text-insta-text mb-6">
           About Me
         </h1>
-        <p className="text-content py-8 lg:max-w-3xl">{personalDetails.about}</p>
+        <p className="text-insta-text-secondary py-6 lg:max-w-3xl leading-relaxed text-lg">{personalDetails.about}</p>
       </section>
-      <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+      <section className="mb-16">
+        <h1 className="text-4xl md:text-5xl xl:text-6xl xl:leading-tight font-bold text-insta-text mb-10">
           Work Experience
         </h1>
         {React.Children.toArray(
@@ -28,7 +28,7 @@ function About() {
         )}
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-4xl md:text-5xl xl:text-6xl xl:leading-tight font-bold text-insta-text mb-10">
           Education
         </h1>
         {React.Children.toArray(
