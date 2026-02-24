@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { personalDetails } from "../Details";
 
@@ -77,9 +78,12 @@ function Home() {
         >
           {tagline}
         </h2>
-        <button className="btn-insta mt-6">
+        <NavLink
+          to="/projects"
+          className="inline-block btn-insta mt-6 text-center hover:shadow-lg hover:shadow-pink-500/40 transform hover:scale-105 transition-all duration-300"
+        >
           Explore My Work
-        </button>
+        </NavLink>
       </div>
       <div className="mt-8 md:mt-0 flex-1" ref={myimageref}>
         <img 
