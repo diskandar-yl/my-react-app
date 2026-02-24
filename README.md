@@ -6,11 +6,28 @@
 ---
 
 ## Livepreview
-https://diskandar-ylporto.netlify.app/
+https://diskandar-ylporto.netlify.app
 
 ## Reason for Creation
 
 Porto was developed to provide developers with a professional, customizable, and production-ready portfolio template. The objective is to eliminate the need for developers to build their portfolios from scratch while maintaining full control over content, design, and deployment. This template showcases professional work experience, educational background, technical skills, and projects through a responsive, modern interface with smooth animations and dark mode support.
+
+---
+
+## 🎨 Web Preview
+
+Get a glimpse of Porto in action! This preview showcases the complete website experience across all pages.
+
+<div align="center">
+  <img src="preview.gif" alt="Porto Portfolio Preview" style="max-width: 100%; width: 600px; border-radius: 12px; box-shadow: 0 10px 40px rgba(255, 0, 110, 0.2);" />
+  
+  ### Featured Pages in Preview:
+  ✨ **Home** - Hero section with animated introduction  
+  👤 **About** - Work experience and education timeline  
+  🚀 **Projects** - Interactive project portfolio grid  
+  ⚙️ **Technologies** - Tech stack and development tools  
+  💬 **Contact** - Contact information and links
+</div>
 
 ---
 
@@ -24,6 +41,8 @@ Porto was developed to provide developers with a professional, customizable, and
 - **Customizable Branding** with gradient logo and personal styling
 - **Professional Sections**: Home, About, Projects, Technologies, and Contact
 - **SEO-Optimized** with semantic HTML and accessibility features
+- **Modern Dark Aesthetic** inspired by Instagram's design philosophy
+- **Interactive Elements** with hover effects and smooth transitions
 
 ---
 
@@ -178,6 +197,32 @@ Test on multiple browsers:
 - Firefox (v88+)
 - Safari (v14+)
 - Mobile browsers (iOS Safari, Android Chrome)
+
+### 7. Generate Preview GIF
+
+To create an animated preview of your portfolio:
+
+**Prerequisites:**
+```bash
+npm install puppeteer gif-encoder sharp
+```
+
+**Generate the preview:**
+```bash
+node create-preview-gif.js
+```
+
+This will capture screenshots of all pages and create a `preview.gif` file in your project root. The GIF automatically cycles through:
+- Home page with hero section
+- About page with timeline
+- Projects page with portfolio grid
+- Technologies page with tech stack
+- Contact page with information
+
+**Customize the preview** by editing `create-preview-gif.js`:
+- Adjust `FRAME_WIDTH` and `FRAME_HEIGHT` for different sizes
+- Modify `FRAME_DELAY` to change animation speed
+- Update the `PAGES` array to include/exclude specific pages
 
 ---
 
