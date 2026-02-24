@@ -1,6 +1,7 @@
 // Enter all your detials in this file
 // Logo images
 import logogradient from "./assets/logo.svg";
+import logo from "./assets/logo2.svg";
 // Profile Image
 import profile from "./assets/profile.jpg";
 // Tech stack images
@@ -93,8 +94,8 @@ export const eduDetails = [
 
 // Tech Stack and Tools
 export const techStackDetails = {
-  html: html,
-  css: css,
+  html,
+  css,
   js: js,
   react: react,
   redux: redux,

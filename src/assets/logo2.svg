@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56" height="42" viewBox="0 0 56 42"
+     role="img" aria-label="{{ 110 }} disk-yl badge">
+  <defs>
+    <!-- White color with 80% opacity -->
+    <style>
+      .brace {
+        font: 700 19px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: white;
+        opacity: 0.8;
+        dominant-baseline: middle;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+      .num {
+        font: 700 17px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: white;
+        opacity: 0.8;
+        dominant-baseline: middle;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+      }
+      .name {
+        font: 800 11px 'Segoe UI','Montserrat','Poppins',Arial,sans-serif;
+        fill: white;
+        opacity: 0.8;
+        letter-spacing: 0.1px;
+        font-weight: 900;
+      }
+    </style>
+
+    <!-- Enhanced shadow with subtle glow -->
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.5"
+                    flood-color="#000" flood-opacity="0.3"/>
+      <feDropShadow dx="0" dy="0.5" stdDeviation="0.8"
+                    flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Dark background for contrast -->
+  <rect x="0" y="0" width="56" height="42" fill="#0F0F0F"/>
+
+  <!-- Top line: {{ 110 }} — centered with improved spacing -->
+  <g filter="url(#shadow)" transform="translate(28, 12)">
+    <text class="brace" text-anchor="end" x="-13" y="0">{{</text>
+    <text class="num"   text-anchor="middle" x="0"   y="0">110</text>
+    <text class="brace" text-anchor="start" x="13"  y="0">}}</text>
+  </g>
+
+  <!-- Bottom line: disk-yl — improved positioning and spacing -->
+  <text class="name" text-anchor="middle" x="28" y="34">disk-yl</text>
+</svg>
